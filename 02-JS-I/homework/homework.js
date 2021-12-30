@@ -72,8 +72,9 @@ function sonIguales(x, y) {
   // Tu código:
   if (x == y) {
     return true;
-  }
+  } else{
     return false;
+  }
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -81,11 +82,9 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  if(Math.length(str1) === Math.length(str2)){
+  if ((str1.length) === (str2.length)){
     return true;
-  }
-
-    return false;
+  } return false
 }
 
 function menosQueNoventa(num) {
@@ -95,8 +94,7 @@ function menosQueNoventa(num) {
 
   if(num < 90){
     return true;
-  } else {
-
+  } else{
   return false;
   }
 }
@@ -108,7 +106,7 @@ function mayorQueCincuenta(num) {
 
   if(num > 50){
     return true;
-  } else {
+  } else{
   return false;
   }
 }
@@ -116,17 +114,18 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return (x % y)
+  return (x % y);
 }
 
-function esPar(num) {
+function esPar(num){
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num % 2 == 0){
     return true;
-  }
+  } else{
     return false;
+  }
 }
 
 function esImpar(num) {
@@ -135,10 +134,11 @@ function esImpar(num) {
   // Tu código:
   if(num % 2 == 0){
     return false;
-  }
-  
+  } else{
   return true;
+  }
 }
+
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
@@ -189,10 +189,13 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero > 0){
-    return "Es positivo";
-  }
-  return "Es negativo";
+
+  if (numero === 0){
+    return false
+  } if (numero > 1){
+    return "Es positivo"
+  } 
+  return "Es negativo"
 }
 
 function agregarSimboloExclamacion(str) {
@@ -208,7 +211,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var nombreCompleto = nombre + apellido;
+  var nombreCompleto = nombre + " " + apellido;
   return (nombreCompleto);
   
 }
@@ -232,16 +235,16 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  var perimetroCuadrado = lado * 4
-  return (perimetroCuadrado)
+  var perimetroCuadrado = lado * 4;
+  return (perimetroCuadrado);
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  var areaTriangulo = base * altura / 2
-  return (areaTriangulo)
+  var areaTriangulo = base * altura / 2;
+  return (areaTriangulo);
 }
 
 
@@ -249,8 +252,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var EuroADolar = euro * 1.2
-  return (euro * Dolar)
+  var EuroADolar = euro * 1.2;
+  return EuroADolar;
 }
 
 
@@ -260,17 +263,12 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra.length > 1){
+  var vocales = 'a' || 'e' || 'i' || 'o' || 'u'
+
+  if (letra !== vocales){
     return "Dato incorrecto"
-  } else {
-    if (letra = "a" || "A" || "e" || "E" || "i" || "I" || "o" || "O" || "u" || "U"){
-      return "Es vocal"
-    }
-    return ("Dato incorrecto")
-  }
+  } return "Es vocal"
 }
-
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
@@ -309,4 +307,4 @@ module.exports = {
   areaDelTriangulo,
   deEuroAdolar,
   esVocal,
-};
+}
