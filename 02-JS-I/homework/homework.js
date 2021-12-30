@@ -70,11 +70,10 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-
-  if (x === y) {
-    return "true";
+  if (x == y) {
+    return true;
   }
-    return "false";
+    return false;
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -82,10 +81,11 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  if(str1.length === str2.length){
-    return "true";}
-    
-    return "false";
+  if(Math.length(str1) === Math.length(str2)){
+    return true;
+  }
+
+    return false;
 }
 
 function menosQueNoventa(num) {
@@ -94,10 +94,11 @@ function menosQueNoventa(num) {
   // Tu código:
 
   if(num < 90){
-    return "true";
-  }
+    return true;
+  } else {
 
-  return "false";
+  return false;
+  }
 }
 
 function mayorQueCincuenta(num) {
@@ -106,10 +107,10 @@ function mayorQueCincuenta(num) {
   // Tu código:
 
   if(num > 50){
-    return "true";
+    return true;
+  } else {
+  return false;
   }
-
-  return "false";
 }
 
 function obtenerResto(x, y) {
@@ -123,11 +124,9 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num % 2 == 0){
-    return "true";
+    return true;
   }
-  else {
-    return "false";
-  }
+    return false;
 }
 
 function esImpar(num) {
@@ -135,10 +134,10 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num % 2 == 0){
-    return "false";
+    return false;
   }
   
-  return "true";
+  return true;
 }
 
 function elevarAlCuadrado(num) {
@@ -202,7 +201,7 @@ function agregarSimboloExclamacion(str) {
   // Tu código:
 
   var exclamar = str + "!";
-  return exclamar;
+  return (exclamar);
 }
 
 function combinarNombres(nombre, apellido) {
@@ -210,7 +209,7 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
   var nombreCompleto = nombre + apellido;
-  return nombreCompleto;
+  return (nombreCompleto);
   
 }
 
@@ -219,14 +218,14 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
   var Saludar = "Hola " + nombre + "!";
-  return Saludar;
+  return (Saludar);
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   var areaRectangulo = alto * ancho;
-  return areaRectangulo;
+  return (areaRectangulo);
 }
 
 
@@ -234,7 +233,7 @@ function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
   var perimetroCuadrado = lado * 4
-  return perimetroCuadrado
+  return (perimetroCuadrado)
 }
 
 
@@ -242,7 +241,7 @@ function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
   var areaTriangulo = base * altura / 2
-  return areaTriangulo
+  return (areaTriangulo)
 }
 
 
@@ -267,7 +266,7 @@ function esVocal(letra){
     if (letra = "a" || "A" || "e" || "E" || "i" || "I" || "o" || "O" || "u" || "U"){
       return "Es vocal"
     }
-    return "Dato incorrecto"
+    return ("Dato incorrecto")
   }
 }
 
