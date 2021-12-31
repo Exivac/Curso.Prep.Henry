@@ -1,0 +1,31 @@
+--Variables--
+Las variables te dejan meter muchas cosas en una o mas palabras (llamadas "Nombre") luego del nombre le escribis lo que queres que esa variable sea (Lo que se llama "Valor"). 
+
+Si creas una variable y le llamas "MiAmigo" (Y tene cuidado que tiene que ir todo junto) podes ponerle el valor que quieras, por ejemplo: Juan, y donde sea que pongas "MiAmigo", el programa va a entender "Juan"
+Lo bueno es que podes cambiarle el valor y se va a cambiar en todas las partes donde escribas la variable "MiAmigo", ahorrandote el cambiar una por una.
+
+Una variable puede ser lo que sea, desde nombres hasta "listas con opciones"
+
+--Strings--
+Los Strings son basicamente un conjunto de palabras. Se escriben entre comillas y aunque escribas una variable entre esas palabras no se va a transformar en el valor de la variable (a menos que lo escribas como "Mi amigo se llama $[MiAmigo]"). Pero podes poner una String dentro de una variable y esa variable significara esa o esas palabras
+
+--Funciones (argumentos, `return`)--
+Las funciones te dejan confirmar cosas o hacer operaciones (como por ejemplo cuentas) y luego conseguir el resultado.
+
+Funcionan de forma similar a las variables, pero lo interesante es que a las funciones podes ponerle algo llamado "Argumentos"
+
+Las funciones se escriben con un nombre y los argumentos entre parentesis (si queres ponerle argumentos). Si hay varios argumentos, hay que separarlos con una coma.
+
+Los argumentos te dejan darle el valor que quieras de forma mas facil a las operaciones que metas en la funcion y cuando hay varios argumentos hay que separarlos con comas. Podes escribir "function Suma(num1, num2)" y dentro de la funcion podes poner "return num1 + num2".
+
+El comando return te devuelve el resultado de algo, en este caso una suma, y funciona como el valor en una variable. De forma que cuando escribas "Suma(3,2)" consigas 5 o "Suma(10,14)" consigas 24.
+
+Algo interesante es que podes poner variables dentro de una funcion para ahorrarte tiempo y palabras.
+
+
+* Declaraciones `if`
+Si pones "if" dentro de una funcion, le estas diciendo a la funcion que haga algo SOLO si lo que dice el "if" es correcto. Asi que le podes decir "Si '2 + 2 es 4' decime 'es verdad'" en este caso la funcion te "Dice" si es verdad con el comando "return"
+Esto es util cuando queres hacer algo solo si se cumple alguna otra condicion.
+
+
+* Valores booleanos (`true`, `false`)
