@@ -5,12 +5,16 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x > y){
-    return x;
-  } else if (y > x){
-    return y;
-  } else {
-    return x || y;
+  var e1 = x
+  var e2 = y
+  
+  switch (e1 , e2){
+    case e1 > e2:
+      return e1;
+    case e2 > e1:
+      return e2;
+    default: 
+      return e1 || e2
   }
 }
 
@@ -53,15 +57,12 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
 switch (idioma){
-  case idioma === "aleman":
-  "Guten Tag!";
-  break;
-  case idioma === "mandarin":
-  "Ni Hao!";
-  break;
-  case idioma === "ingles":
-  "Hello!";
-  break;
+  case "aleman":
+    return "Guten Tag!";
+  case "mandarin":
+    return "Ni Hao!";
+  case "ingles":
+    return "Hello!";
   default:
     return "Hola!";
 }
@@ -78,23 +79,24 @@ function colors(color) {
   //Usar el statement Switch.
   switch (color){
     case "blue":
-      var col = "This is blue";
+      return "This is blue";
     case "red":
-      col = "This is red";
+      return "This is red";
     case "green":
-      col = "This is green";
+      return "This is green";
     case "orange":
-      col = "This is orange";
-      default: 
-      var col = "Color not found";
+      return "This is orange";
+    default: 
+      return "Color not found";
   }
-  return col
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+
+
 }
 
 function estaEnRango(numero) {
