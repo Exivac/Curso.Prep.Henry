@@ -5,30 +5,27 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  var e1 = x
-  var e2 = y
-  
-  switch (e1 , e2){
-    case e1 > e2:
-      return e1;
-    case e2 > e1:
-      return e2;
-    default: 
-      return e1 || e2
+    switch(x,y){
+      case x < y:
+        return y;
+      case y < x:
+        return x;
+      default: 
+        return x || y
   }
 }
 
-function mayoriaDeEdad(edad) {
+
+
+function mayoriaDeEdad(edad){
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-var ok = "Allowed"
-var no = "Not Allowed"
 
-if (edad >= 18){
-  return ok;
-  } else if (edad < 18) {
-    return no;
+  if(edad >= 18){
+    return "Allowed"
+  } else {
+    return "Not allowed"
   }
 }
 
@@ -40,12 +37,13 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   switch (status){
-    case (status === 1): return "Online";
-    break;
-    case (status === 2): return "Away";
-    break;
-    default: return "Offline";
-    break;
+    case 1: 
+      return "Online";
+    case 2: 
+      return "Away";
+    default: 
+      return "Offline";
+    
   }
 }
 
@@ -65,8 +63,7 @@ switch (idioma){
     return "Hello!";
   default:
     return "Hola!";
-}
-
+  }
 }
 
 function colors(color) {
@@ -95,14 +92,23 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-
-
+  switch(numero){
+    case 10:
+      return true;
+    case 5:
+      return true;
+    default:
+      return false;
+  }
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(numero>=20 && numero<=50){
+    return true
+  } return false
 }
 
 function esEntero(numero) {
@@ -113,6 +119,8 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+
+  
 }
 
 function fizzBuzz(numero) {
