@@ -27,12 +27,14 @@ h1 {
     border-style: solid;
 }
 
+
 #thirdDiv img {
     max-height: 400px;
     list-style: none;
     display: inline-flex;
     padding: 5px;
 }
+
 
 
 img {
