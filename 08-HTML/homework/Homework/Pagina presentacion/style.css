@@ -14,27 +14,28 @@ h1 {
 .divClass {
     text-align: center;
 }
+
 #thirdDiv {
-    width: 80%;
-    min-height: 600px;
+    width: fit-content;
+    height: fit-content;
     background-color:slateblue;
     padding: 50px;
     margin: auto;
-    margin-top: 20px;
 
     border-radius: 10px;
     border-color: rgb(255, 91, 15);
     border-style: solid;
 }
 
-#thirdDiv li {
+#thirdDiv img {
+    max-height: 400px;
     list-style: none;
+    display: inline-flex;
+    padding: 5px;
 }
 
-#thirdDiv img {
-    display: -webkit-flex;
-    display: flex;
-    
+
+img {
     width: 400px;
 }
 
