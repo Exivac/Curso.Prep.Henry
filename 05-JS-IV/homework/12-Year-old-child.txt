@@ -1,0 +1,18 @@
+--Objetos--
+Los Objetos son como los arrays, solo que en lugar de contener varios elementos, los objetos contienen varias propiedades sobre una sola cosa
+
+--Propiedades--
+Las propiedades son cosas que "describen" o dan informacion sobre un objeto. 
+Por ejemplo: Podemos tener un objeto llamado "Juan" y dentro del objeto poner "Edad: 12", "Vive en: Argentina" y esa informacion se toma como propiedad del objeto "Juan"
+
+--Métodos--
+Los metodos son operaciones que se ejecutan sobre un objeto (En este caso hablamos de objetos, pero distintos tipos de elementos tienen metodos, como los arrays, los numeros, etc)
+Los metodos se pueden interpretar como funciones integradas en javascript (que no las tenes que escribir para usarlas) utilizando los metodos podes hacer que el objeto devuelva o haga algo.
+
+--Bucle `for…in`--
+Los bucles "For" que se usan en los Arrays no funcionan con los Objetos, para eso existe otro bucle llamado "for…in".
+El bucle ejecuta acciones sobre cada elemento en un objeto
+
+--Notación de puntos vs notación de corchetes--
+La notacion de puntos te deja acceder a los distintos elementos de un objeto por su nombre, la de corchetes tambien te deja hacer lo mismo, pero la diferencia es que la notacion de puntos es mas facil de leer mientras la de corchetes te permite hacer mas cosas como, por ejemplo, recibir una variable.
+En resumen, la notacion de puntos puede buscar algo especifico dentro de un objeto mientras la de corchetes te deja buscar algo que puede cambiar en el mismo. No puedes poner una variable en notacion de puntos, por lo que es mas limitada

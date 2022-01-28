@@ -1,0 +1,2 @@
+--Arrays--
+Los array son conjuntos o listas de elementos. Para interpretarlo mejor, se puede comparar como la lista del supermercado, el papel es el array y los elementos de la lista son el contenido de ese array
